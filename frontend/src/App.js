@@ -43,6 +43,7 @@ const App = () => {
         <Form
           setInputName={setInputName}
           setCharName={setCharName}
+          charClass={charClass}
           setCharClass={setCharClass}
           setBirthDate={setBirthDate}
           handleSubmit={handleSubmit}

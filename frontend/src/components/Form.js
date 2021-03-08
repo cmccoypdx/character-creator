@@ -1,9 +1,9 @@
 const Form = props => {
-  const { setInputName, setCharClass, setBirthDate, handleSubmit } = props;
+  const { setInputName, charClass, setCharClass, setBirthDate, handleSubmit } = props;
 
   return (
     <form onSubmit={handleSubmit}>
-      <label for='inputName'>Name:</label>
+      <label htmlFor='inputName'>Name:</label>
       <input
         name='inputName'
         type='text'
@@ -11,16 +11,16 @@ const Form = props => {
         onChange={event => setInputName(event.target.value)}
       />
       <br></br>
-      <label for='charClass'>Class:</label>
-      <select name='charClass' onChange={event => setCharClass(event.target.value)}>
-        <option selected value='Wizard'>
+      <label htmlFor='charClass'>Class:</label>
+      <select name='charClass' value={charClass} onChange={event => setCharClass(event.target.value)}>
+        <option value='Wizard'>
           Wizard
         </option>
         <option value='Warrior'>Warrior</option>
         <option value='Rogue'>Rogue</option>
       </select>
       <br></br>
-      <label for='birthDate'>Birthdate:</label>
+      <label htmlFor='birthDate'>Birthdate:</label>
       <input
         name='birthDate'
         type='text'

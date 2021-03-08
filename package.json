@@ -4,10 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "install:all": "npm install && run-p install:api install:ui",
+    "install:api": "cd api && npm install",
+    "install:ui": "cd frontend && npm install",
     "start": "run-p start:api start:ui",
     "start:api": "cd api && nodemon ./index.js",
-    "start:ui": "cd frontend && npm start"
+    "start:ui": "cd frontend && npm start",
+    "test": "run-s test:api test:ui",
+    "test:api": "cd api && npm test",
+    "test:ui": "cd frontend && npm test"
   },
   "author": "",
   "license": "UNLICENSED",
