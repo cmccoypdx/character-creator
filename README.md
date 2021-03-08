@@ -18,9 +18,9 @@ Given the above described application, the candidate will produce an infrastruct
 ## Requirements
 The IaC document should be written in a well-known and well-documented format, such as [AWS CloudFormation](https://aws.amazon.com/cloudformation/), [Terraform](https://www.terraform.io/), or [Serverless Framework](https://www.serverless.com/). This readme should be edited, or a new readme should be provided, that gives clear instructions for deploying the application to the given platform using the produced IaC document or documents.
 
-## Extra Credit
+## Suggested Enhancements
 The following are not requirements, but suggestions should the candidate quickly accomplish the requirements given above and wish to add further enhancements.
 
 - Build and Deploy process - via a script that can be run locally, a CI/CD orchestration document (e.g. a `buildspec.yml` file for AWS CodeBuild), or even just a detailed documentation checklist, produce an artifact for building and deploying the application that includes the running of all provided unit tests, and any additional tests created.
 
-- Integration and/or end-to-end tests - add a test suite (not unit tests) for testing the application. Instructions should be provided for running the test suite. Bonus points if the test suite is integrated into the build and deploy process described above.
+- Integration and/or end-to-end tests - add a test suite (not unit tests) for testing the application. Instructions should be provided for running the test suite. If a build process is given, integrate the test suite into this.
